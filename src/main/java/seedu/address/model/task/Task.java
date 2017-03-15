@@ -1,7 +1,8 @@
 package seedu.address.model.task;
 
 import java.util.Objects;
-
+import java.util.Iterator;
+import seedu.address.model.tag.Tag;
 import seedu.address.model.tag.UniqueTagList;
 
 public class Task {
@@ -38,6 +39,19 @@ public class Task {
      */
     public UniqueTagList getTags() {
         return new UniqueTagList(tags);
+    }
+    
+    /**
+     * Utility function to stringify title and tags
+     * @return String with title and tags
+     */
+    public String toStringTitleAndTagList() {
+    	String titleAndTagString = getTitle().title + " ";
+    	Iterator<Tag> tagIterator = getTags().iterator();
+    	if(tagIterator.hasNext()){
+    		titleAndTagString += tagIterator.next().tagName + " ";
+    	}
+    	return titleAndTagString;
     }
 
     /**
