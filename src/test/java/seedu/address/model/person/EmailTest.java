@@ -5,6 +5,8 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
+import seedu.taskit.model.person.Email;
+
 public class EmailTest {
 
     @Test

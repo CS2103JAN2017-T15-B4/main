@@ -26,16 +26,16 @@ import javafx.scene.input.KeyCodeCombination;
 import javafx.scene.input.KeyCombination;
 import junit.framework.AssertionFailedError;
 import seedu.address.TestApp;
-import seedu.address.commons.exceptions.IllegalValueException;
-import seedu.address.commons.util.FileUtil;
-import seedu.address.commons.util.XmlUtil;
-import seedu.address.model.AddressBook;
-import seedu.address.model.tag.Tag;
-import seedu.address.model.tag.UniqueTagList;
-import seedu.address.model.task.ReadOnlyTask;
-import seedu.address.model.task.Task;
-import seedu.address.model.task.Title;
-import seedu.address.storage.XmlSerializableAddressBook;
+import seedu.taskit.commons.exceptions.IllegalValueException;
+import seedu.taskit.commons.util.FileUtil;
+import seedu.taskit.commons.util.XmlUtil;
+import seedu.taskit.model.AddressBook;
+import seedu.taskit.model.tag.Tag;
+import seedu.taskit.model.tag.UniqueTagList;
+import seedu.taskit.model.task.ReadOnlyTask;
+import seedu.taskit.model.task.Task;
+import seedu.taskit.model.task.Title;
+import seedu.taskit.storage.XmlSerializableAddressBook;
 
 /**
  * A utility class for test cases.

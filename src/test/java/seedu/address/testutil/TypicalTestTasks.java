@@ -1,9 +1,9 @@
 package seedu.address.testutil;
 
-import seedu.address.commons.exceptions.IllegalValueException;
-import seedu.address.model.AddressBook;
-import seedu.address.model.task.Task;
-import seedu.address.model.task.UniqueTaskList;
+import seedu.taskit.commons.exceptions.IllegalValueException;
+import seedu.taskit.model.AddressBook;
+import seedu.taskit.model.task.Task;
+import seedu.taskit.model.task.UniqueTaskList;
 
 public class TypicalTestTasks {
     public TestTask hw1, hw2, lunch, interview;

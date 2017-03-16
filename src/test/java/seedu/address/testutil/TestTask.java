@@ -1,9 +1,9 @@
 package seedu.address.testutil;
 
-import seedu.address.model.task.Task;
-import seedu.address.model.task.ReadOnlyTask;
-import seedu.address.model.task.Title;
-import seedu.address.model.tag.UniqueTagList;
+import seedu.taskit.model.tag.UniqueTagList;
+import seedu.taskit.model.task.ReadOnlyTask;
+import seedu.taskit.model.task.Task;
+import seedu.taskit.model.task.Title;
 
 public class TestTask implements ReadOnlyTask {
     private Title title;

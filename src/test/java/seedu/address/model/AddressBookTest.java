@@ -14,10 +14,12 @@ import org.junit.rules.ExpectedException;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import seedu.address.model.tag.Tag;
-import seedu.address.model.task.ReadOnlyTask;
-import seedu.address.model.task.Task;
 import seedu.address.testutil.TypicalTestTasks;
+import seedu.taskit.model.AddressBook;
+import seedu.taskit.model.ReadOnlyAddressBook;
+import seedu.taskit.model.tag.Tag;
+import seedu.taskit.model.task.ReadOnlyTask;
+import seedu.taskit.model.task.Task;
 
 public class AddressBookTest {
 

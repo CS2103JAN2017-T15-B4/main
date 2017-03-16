@@ -13,8 +13,10 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.rules.TemporaryFolder;
 
-import seedu.address.commons.core.Config;
-import seedu.address.commons.exceptions.DataConversionException;
+import seedu.taskit.commons.core.Config;
+import seedu.taskit.commons.exceptions.DataConversionException;
+import seedu.taskit.commons.util.ConfigUtil;
+import seedu.taskit.commons.util.FileUtil;
 
 public class ConfigUtilTest {
 
