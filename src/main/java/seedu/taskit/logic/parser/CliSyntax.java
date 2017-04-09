@@ -16,6 +16,7 @@ public class CliSyntax {
     public static final Prefix PREFIX_TO = new Prefix(" to ");
     public static final Prefix PREFIX_PRIORITY = new Prefix(" priority ");
     public static final Prefix PREFIX_TITLE = new Prefix(" title ");
+    public static final Prefix PREFIX_RECURRING = new Prefix(" recurring ");
 
     public static final String LIST_ALL = "all";
     public static final String LIST_DEADLINE = "deadline";

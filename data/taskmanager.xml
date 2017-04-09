@@ -23,12 +23,47 @@
         <start></start>
         <end>3pm</end>
         <priority>high</priority>
+        <recurringStr>false</recurringStr>
+    </tasks>
+    <tasks>
+        <title>task3</title>
+        <start></start>
+        <end>6pm</end>
+        <priority>high</priority>
+        <recurringStr>true</recurringStr>
+    </tasks>
+    <tasks>
+        <title>TR3002 meeting business plan</title>
+        <start>this thursday 4pm</start>
+        <end>thursday 11.59pm</end>
+        <priority>high</priority>
+        <recurringStr>false</recurringStr>
+        <tagged>school</tagged>
+        <tagged>assignment</tagged>
+    </tasks>
+    <tasks>
+        <title>study for CS2103 final</title>
+        <start></start>
+        <end>Friday</end>
+        <priority>high</priority>
+        <recurringStr>false</recurringStr>
+    </tasks>
+    <tasks>
+        <title>pitching to VCs</title>
+        <start>15 april 11.15am</start>
+        <end>15 april 12pm</end>
+        <priority>high</priority>
+        <recurringStr>false</recurringStr>
+        <tagged>presentation</tagged>
+        <tagged>school</tagged>
+        <tagged>work</tagged>
     </tasks>
     <tasks>
         <title>CS2103 TaskIt v0.5rc</title>
         <start></start>
         <end>next monday</end>
         <priority>high</priority>
+        <recurringStr>false</recurringStr>
         <tagged>school</tagged>
     </tasks>
     <tasks>
@@ -36,31 +71,16 @@
         <start></start>
         <end>next monday 11.59pm</end>
         <priority>high</priority>
+        <recurringStr>false</recurringStr>
         <tagged>school</tagged>
         <tagged>assignment</tagged>
-    </tasks>
-    <tasks>
-        <title>TR3002 meeting business plan</title>
-        <start>this thursday 4pm</start>
-        <end>thursday 11.59pm</end>
-        <priority>high</priority>
-        <tagged>school</tagged>
-        <tagged>assignment</tagged>
-    </tasks>
-    <tasks>
-        <title>pitching to VCs</title>
-        <start>15 april 11.15am</start>
-        <end>15 april 12pm</end>
-        <priority>high</priority>
-        <tagged>presentation</tagged>
-        <tagged>school</tagged>
-        <tagged>work</tagged>
     </tasks>
     <tasks>
         <title>new ACE grant launch</title>
         <start></start>
         <end>1 may</end>
         <priority>high</priority>
+        <recurringStr>false</recurringStr>
         <tagged>work</tagged>
     </tasks>
     <tasks>
@@ -68,6 +88,7 @@
         <start></start>
         <end>15 may</end>
         <priority>high</priority>
+        <recurringStr>false</recurringStr>
         <tagged>work</tagged>
     </tasks>
     <tasks>
@@ -75,6 +96,7 @@
         <start></start>
         <end>31 may</end>
         <priority>high</priority>
+        <recurringStr>false</recurringStr>
         <tagged>work</tagged>
     </tasks>
     <tasks>
@@ -82,25 +104,45 @@
         <start></start>
         <end></end>
         <priority>high</priority>
+        <recurringStr>false</recurringStr>
     </tasks>
     <tasks>
         <title>powerful search</title>
         <start></start>
         <end></end>
         <priority>high</priority>
+        <recurringStr>false</recurringStr>
     </tasks>
     <tasks>
         <title>tests</title>
         <start></start>
         <end></end>
         <priority>high</priority>
+        <recurringStr>false</recurringStr>
         <tagged>cs2103</tagged>
+    </tasks>
+    <tasks>
+        <title>study for CS2103 final</title>
+        <start></start>
+        <end></end>
+        <priority>high</priority>
+        <recurringStr>false</recurringStr>
+    </tasks>
+    <tasks>
+        <title>CS2103 TaskIt v0.5</title>
+        <start></start>
+        <end>thursday 12pm</end>
+        <priority>medium</priority>
+        <recurringStr>false</recurringStr>
+        <tagged>school</tagged>
+        <tagged>assignment</tagged>
     </tasks>
     <tasks>
         <title>liaise with Prof Ben Leong</title>
         <start></start>
         <end>this sunday</end>
         <priority>medium</priority>
+        <recurringStr>false</recurringStr>
         <tagged>school</tagged>
         <tagged>work</tagged>
     </tasks>
@@ -109,21 +151,15 @@
         <start></start>
         <end>this sunday</end>
         <priority>medium</priority>
+        <recurringStr>false</recurringStr>
         <tagged>home</tagged>
-    </tasks>
-    <tasks>
-        <title>CS2103 TaskIt v0.5</title>
-        <start></start>
-        <end>thursday 12pm</end>
-        <priority>medium</priority>
-        <tagged>school</tagged>
-        <tagged>assignment</tagged>
     </tasks>
     <tasks>
         <title>ME3241 assignment due</title>
         <start></start>
         <end>17 april 5pm</end>
         <priority>medium</priority>
+        <recurringStr>false</recurringStr>
         <tagged>school</tagged>
         <tagged>assignment</tagged>
     </tasks>
@@ -132,6 +168,7 @@
         <start>19 april 4.15pm</start>
         <end>19 april 5pm</end>
         <priority>medium</priority>
+        <recurringStr>false</recurringStr>
         <tagged>presentation</tagged>
         <tagged>school</tagged>
     </tasks>
@@ -140,6 +177,7 @@
         <start>23 april 2pm</start>
         <end>23 april 5pm</end>
         <priority>medium</priority>
+        <recurringStr>false</recurringStr>
         <tagged>health</tagged>
         <tagged>home</tagged>
     </tasks>
@@ -148,6 +186,7 @@
         <start></start>
         <end>30 april</end>
         <priority>medium</priority>
+        <recurringStr>false</recurringStr>
         <tagged>health</tagged>
     </tasks>
     <tasks>
@@ -155,6 +194,7 @@
         <start></start>
         <end>15 may</end>
         <priority>medium</priority>
+        <recurringStr>false</recurringStr>
         <tagged>holiday</tagged>
     </tasks>
     <tasks>
@@ -162,6 +202,7 @@
         <start></start>
         <end>1 june</end>
         <priority>medium</priority>
+        <recurringStr>false</recurringStr>
         <tagged>family</tagged>
     </tasks>
     <tasks>
@@ -169,12 +210,14 @@
         <start></start>
         <end></end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
     </tasks>
     <tasks>
         <title>call prof lee</title>
         <start></start>
         <end>30 March 2017</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>school</tagged>
     </tasks>
     <tasks>
@@ -182,6 +225,7 @@
         <start></start>
         <end>1 april</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>school</tagged>
         <tagged>assignment</tagged>
     </tasks>
@@ -190,12 +234,14 @@
         <start></start>
         <end>today</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
     </tasks>
     <tasks>
         <title>go exercise</title>
         <start></start>
         <end>10am</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>health</tagged>
         <tagged>home</tagged>
     </tasks>
@@ -204,22 +250,9 @@
         <start>tomorrow 4pm</start>
         <end>tomorrow 6pm</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>school</tagged>
         <tagged>assignment</tagged>
-        <tagged>work</tagged>
-    </tasks>
-    <tasks>
-        <title>change bedsheets</title>
-        <start></start>
-        <end>this weekend</end>
-        <priority>low</priority>
-        <tagged>home</tagged>
-    </tasks>
-    <tasks>
-        <title>skype meeting with Wandeer</title>
-        <start>this sunday 10pm</start>
-        <end>this sunday 11.30pm</end>
-        <priority>low</priority>
         <tagged>work</tagged>
     </tasks>
     <tasks>
@@ -227,30 +260,50 @@
         <start></start>
         <end>thursday</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>household</tagged>
         <tagged>shopping</tagged>
-    </tasks>
-    <tasks>
-        <title>CS2103 TaskIt Presentation</title>
-        <start></start>
-        <end>next thursday 12pm</end>
-        <priority>low</priority>
-        <tagged>presentation</tagged>
-        <tagged>school</tagged>
-        <tagged>assignment</tagged>
     </tasks>
     <tasks>
         <title>meet Chong Yee NUS Enterprise</title>
         <start></start>
         <end>14 april</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>work</tagged>
+    </tasks>
+    <tasks>
+        <title>change bedsheets</title>
+        <start></start>
+        <end>this weekend</end>
+        <priority>low</priority>
+        <recurringStr>false</recurringStr>
+        <tagged>home</tagged>
+    </tasks>
+    <tasks>
+        <title>skype meeting with Wandeer</title>
+        <start>this sunday 10pm</start>
+        <end>this sunday 11.30pm</end>
+        <priority>low</priority>
+        <recurringStr>false</recurringStr>
+        <tagged>work</tagged>
+    </tasks>
+    <tasks>
+        <title>CS2103 TaskIt Presentation</title>
+        <start></start>
+        <end>next thursday 12pm</end>
+        <priority>low</priority>
+        <recurringStr>false</recurringStr>
+        <tagged>presentation</tagged>
+        <tagged>school</tagged>
+        <tagged>assignment</tagged>
     </tasks>
     <tasks>
         <title>ME3241 exam</title>
         <start>22 april 1pm</start>
         <end>22 april 3pm</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>exam</tagged>
         <tagged>school</tagged>
     </tasks>
@@ -259,6 +312,7 @@
         <start>25 april 1pm</start>
         <end>25 april 3pm</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>exam</tagged>
         <tagged>school</tagged>
     </tasks>
@@ -267,6 +321,7 @@
         <start>25 april 5pm</start>
         <end>25 april 7pm</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>exam</tagged>
         <tagged>school</tagged>
     </tasks>
@@ -275,6 +330,7 @@
         <start></start>
         <end>30 april</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>family</tagged>
         <tagged>home</tagged>
     </tasks>
@@ -283,6 +339,7 @@
         <start></start>
         <end>may</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>home</tagged>
     </tasks>
     <tasks>
@@ -290,6 +347,7 @@
         <start></start>
         <end>1 may</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>home</tagged>
     </tasks>
     <tasks>
@@ -297,6 +355,7 @@
         <start></start>
         <end>2 may</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>friends</tagged>
     </tasks>
     <tasks>
@@ -304,6 +363,7 @@
         <start>3 may</start>
         <end>4 may 2017</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>work</tagged>
     </tasks>
     <tasks>
@@ -311,6 +371,7 @@
         <start></start>
         <end>7 may</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>friends</tagged>
     </tasks>
     <tasks>
@@ -318,6 +379,7 @@
         <start></start>
         <end>24 may</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>family</tagged>
     </tasks>
     <tasks>
@@ -325,6 +387,7 @@
         <start>1 july</start>
         <end>7 july</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>holiday</tagged>
     </tasks>
     <tasks>
@@ -332,6 +395,7 @@
         <start></start>
         <end>12 july</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>home</tagged>
     </tasks>
     <tasks>
@@ -339,6 +403,7 @@
         <start>14 july</start>
         <end>20 july</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>work</tagged>
         <tagged>holiday</tagged>
     </tasks>
@@ -347,6 +412,7 @@
         <start>1 december</start>
         <end>4 december</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>friend</tagged>
         <tagged>wedding</tagged>
     </tasks>
@@ -355,6 +421,7 @@
         <start></start>
         <end></end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>church</tagged>
     </tasks>
     <tasks>
@@ -362,6 +429,7 @@
         <start></start>
         <end></end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>work</tagged>
     </tasks>
     <tasks>
@@ -369,6 +437,7 @@
         <start></start>
         <end></end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>school</tagged>
     </tasks>
     <tasks>
@@ -376,6 +445,7 @@
         <start></start>
         <end></end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>home</tagged>
     </tasks>
     <tasks>
@@ -383,6 +453,7 @@
         <start></start>
         <end>12pm</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>home</tagged>
     </tasks>
     <tasks>
@@ -390,6 +461,7 @@
         <start></start>
         <end></end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>home</tagged>
     </tasks>
     <tasks>
@@ -397,12 +469,14 @@
         <start></start>
         <end></end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
     </tasks>
     <tasks>
         <title>meditate</title>
         <start></start>
         <end>tomorrow morning</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>home</tagged>
     </tasks>
     <tasks>
@@ -410,6 +484,7 @@
         <start></start>
         <end>this weekend</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>home</tagged>
     </tasks>
     <tasks>
@@ -417,12 +492,14 @@
         <start></start>
         <end>this weekend</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
     </tasks>
     <tasks>
         <title>family dinner</title>
         <start>sunday 5pm</start>
         <end>sunday 8pm</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>home</tagged>
     </tasks>
     <tasks>
@@ -430,6 +507,7 @@
         <start></start>
         <end>30 june</end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>holiday</tagged>
     </tasks>
     <tasks>
@@ -437,6 +515,7 @@
         <start></start>
         <end></end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>home</tagged>
     </tasks>
     <tasks>
@@ -444,6 +523,7 @@
         <start></start>
         <end></end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>home</tagged>
     </tasks>
     <tasks>
@@ -451,6 +531,7 @@
         <start></start>
         <end></end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
         <tagged>school</tagged>
     </tasks>
     <tasks>
@@ -458,11 +539,48 @@
         <start></start>
         <end></end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
     </tasks>
     <tasks>
         <title>%%%</title>
         <start></start>
         <end></end>
         <priority>low</priority>
+        <recurringStr>false</recurringStr>
+    </tasks>
+    <tasks>
+        <title>Study for final Priority High</title>
+        <start></start>
+        <end></end>
+        <priority>low</priority>
+        <recurringStr>false</recurringStr>
+    </tasks>
+    <tasks>
+        <title>Study for final priotity high</title>
+        <start></start>
+        <end></end>
+        <priority>low</priority>
+        <recurringStr>false</recurringStr>
+    </tasks>
+    <tasks>
+        <title>task6</title>
+        <start></start>
+        <end>7pm</end>
+        <priority>low</priority>
+        <recurringStr>true</recurringStr>
+    </tasks>
+    <tasks>
+        <title>task7</title>
+        <start>5pm</start>
+        <end>7pm</end>
+        <priority>low</priority>
+        <recurringStr>true</recurringStr>
+    </tasks>
+    <tasks>
+        <title>task3</title>
+        <start></start>
+        <end>7pm</end>
+        <priority>low</priority>
+        <recurringStr>true</recurringStr>
     </tasks>
 </addressbook>

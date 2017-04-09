@@ -2,6 +2,7 @@ package seedu.taskit.model.task;
 
 import seedu.taskit.model.tag.UniqueTagList;
 import seedu.taskit.model.task.Date;
+import seedu.taskit.model.task.Recurring;
 
 //@@author A0141011J
 /**
@@ -14,6 +15,7 @@ public interface ReadOnlyTask {
     Date getStart();
     Date getEnd();
     Priority getPriority();
+    Recurring getRecurring();
 
     boolean isDone();
     boolean isOverdue();

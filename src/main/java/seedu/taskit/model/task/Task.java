@@ -7,6 +7,7 @@ import java.util.Objects;
 import seedu.taskit.commons.exceptions.IllegalValueException;
 import seedu.taskit.model.tag.UniqueTagList;
 import seedu.taskit.model.task.Date;
+import seedu.taskit.model.task.Recurring;
 import static seedu.taskit.commons.core.Messages.MESSAGE_INVALID_START_DATE;
 import static seedu.taskit.logic.parser.CliSyntax.DONE;
 
@@ -16,6 +17,7 @@ public class Task implements ReadOnlyTask, Comparable<Task>{
     protected Date start;
     protected Date end;
     protected Priority priority;
+    protected Recurring recurring;
 
     protected UniqueTagList tags;
 
@@ -26,7 +28,7 @@ public class Task implements ReadOnlyTask, Comparable<Task>{
      * Constructor for tasks
      * @throws IllegalValueException
      */
-    public Task(Title title, Date start, Date end, Priority priority, UniqueTagList tags) throws IllegalValueException {
+    public Task(Title title, Date start, Date end, Priority priority, UniqueTagList tags, Recurring recurring) throws IllegalValueException {
         this.title = title;
         if (!start.isStartValidComparedToEnd(end)) {
             throw new IllegalValueException(MESSAGE_INVALID_START_DATE);
@@ -36,6 +38,7 @@ public class Task implements ReadOnlyTask, Comparable<Task>{
         this.priority = priority;
         this.tags = new UniqueTagList(tags); // protect internal tags from changes in the arg list
         this.isDone = false;
+        this.recurring = recurring;
         this.isOverdue = checkOverdue();
     }
 
@@ -50,6 +53,7 @@ public class Task implements ReadOnlyTask, Comparable<Task>{
         this.tags = new UniqueTagList(source.getTags());
         this.isDone = source.isDone();
         this.isOverdue = source.isOverdue();
+        this.recurring = source.getRecurring();
     }
 
     public void setTitle(Title title) {
@@ -148,7 +152,8 @@ public class Task implements ReadOnlyTask, Comparable<Task>{
                 && other.getStart().equals(this.getStart())
                 && other.getEnd().equals(this.getEnd())
                 && other.getPriority().equals(this.getPriority())
-                && other.getTags().equals(this.getTags()));
+                && other.getTags().equals(this.getTags())
+                && other.getRecurring().equals(this.getRecurring()));
     }
 
     @Override
@@ -197,6 +202,17 @@ public class Task implements ReadOnlyTask, Comparable<Task>{
         this.isOverdue = checkOverdue();
     }
 
+    //@@author A0097141H
+    public void setRecurring(Recurring recurring) {
+    	this.recurring = recurring;
+    }
+
+    
+    public Recurring getRecurring() {
+    	return this.recurring;
+    }
+    
+    
     @Override
     public boolean isOverdue() {
         setOverdue();

@@ -13,6 +13,7 @@ import seedu.taskit.model.task.Priority;
 import seedu.taskit.model.task.ReadOnlyTask;
 import seedu.taskit.model.task.Task;
 import seedu.taskit.model.task.Title;
+import seedu.taskit.model.task.Recurring;
 
 /**
  * JAXB-friendly version of the Task.
@@ -30,6 +31,10 @@ public class XmlAdaptedTask {
 
     @XmlElement(required = true)
     private String priority;
+    
+    @XmlElement(required = true)
+    private String recurringStr;
+
 
     @XmlElement
     private List<XmlAdaptedTag> tagged = new ArrayList<>();
@@ -52,6 +57,7 @@ public class XmlAdaptedTask {
         end = source.getEnd().originalString();
         priority = source.getPriority().toString();
         tagged = new ArrayList<>();
+        recurringStr = source.getRecurring().toString();
         for (Tag tag : source.getTags()) {
             tagged.add(new XmlAdaptedTag(tag));
         }
@@ -72,6 +78,7 @@ public class XmlAdaptedTask {
         final Date end = new Date(this.end);
         final Priority priority = new Priority(this.priority);
         final UniqueTagList tags = new UniqueTagList(taskTags);
-        return new Task(title, start, end, priority, tags);
+        final Recurring recurring = new Recurring(this.recurringStr);
+        return new Task(title, start, end, priority, tags, recurring);
     }
 }

@@ -18,7 +18,7 @@ import seedu.taskit.model.task.ReadOnlyTask;
 import seedu.taskit.model.task.Task;
 import seedu.taskit.model.task.Title;
 import seedu.taskit.model.task.UniqueTaskList;
-
+import seedu.taskit.model.task.Recurring;
 
 /**
  * Add a new task to TaskIt
@@ -42,7 +42,7 @@ public class AddCommand extends Command {
      *
      * @throws IllegalValueException if any of the raw values are invalid
      */
-    public AddCommand(String title, String start, String end, String priority, Set<String> tags)
+    public AddCommand(String title, String start, String end, String priority, Set<String> tags, String recurring)
             throws IllegalValueException {
         final Set<Tag> tagSet = new HashSet<>();
         for (String tagName : tags) {
@@ -53,8 +53,10 @@ public class AddCommand extends Command {
                 new Date(start),
                 new Date(end),
                 new Priority(priority),
-                new UniqueTagList(tagSet)
+                new UniqueTagList(tagSet),
+                new Recurring(recurring)
         );
+        System.out.println("Recurring is: " + this.toAdd.getRecurring().toString());
     }
 
     //@@author A0141011J

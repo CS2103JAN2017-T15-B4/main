@@ -17,6 +17,7 @@ import seedu.taskit.model.task.ReadOnlyTask;
 import seedu.taskit.model.task.Task;
 import seedu.taskit.model.task.Title;
 import seedu.taskit.model.task.UniqueTaskList;
+import seedu.taskit.model.task.Recurring;
 
 //@@author A0141872E
 /**
@@ -93,14 +94,16 @@ public class EditCommand extends Command {
     private static Task createEditedTask(ReadOnlyTask taskToEdit,
                                              EditTaskDescriptor editTaskDescriptor) throws IllegalValueException {
         assert taskToEdit != null;
-
         Title updatedTask = editTaskDescriptor.getTitle().orElseGet(taskToEdit::getTitle);
         Date updatedStart = editTaskDescriptor.getStart().orElseGet(taskToEdit::getStart);
         Date updatedEnd = editTaskDescriptor.getEnd().orElseGet(taskToEdit::getEnd);
         Priority updatedPriority = editTaskDescriptor.getPriority().orElseGet(taskToEdit::getPriority);
         UniqueTagList updatedTags = editTaskDescriptor.getTags().orElseGet(taskToEdit::getTags);
+        Recurring updatedRecurring = editTaskDescriptor.getRecurring().orElseGet(taskToEdit::getRecurring);
 
-        Task newTask = new Task(updatedTask, updatedStart, updatedEnd, updatedPriority, updatedTags);
+        
+
+        Task newTask = new Task(updatedTask, updatedStart, updatedEnd, updatedPriority, updatedTags, updatedRecurring);
         newTask.setOverdue();
         return newTask;
     }
@@ -115,6 +118,7 @@ public class EditCommand extends Command {
         private Optional<Date> end = Optional.empty();
         private Optional<Priority> priority = Optional.empty();
         private Optional<UniqueTagList> tags = Optional.empty();
+        private Optional<Recurring> recurring = Optional.empty();
 
         public EditTaskDescriptor() {}
 
@@ -124,6 +128,7 @@ public class EditCommand extends Command {
             this.end = toCopy.getEnd();
             this.priority = toCopy.getPriority();
             this.tags = toCopy.getTags();
+            this.recurring = toCopy.getRecurring();
         }
 
         /**
@@ -176,6 +181,13 @@ public class EditCommand extends Command {
 
         private Optional<Priority> getPriority() {
             return priority;
+        }
+        public void setRecurring(Optional<Recurring> recurring) {
+        	assert recurring !=null;
+        	this.recurring = recurring;
+        }
+        private Optional<Recurring> getRecurring() {
+        	return recurring;
         }
     }
 

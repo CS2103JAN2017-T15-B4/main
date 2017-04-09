@@ -6,6 +6,7 @@ import static seedu.taskit.logic.parser.CliSyntax.PREFIX_FROM;
 import static seedu.taskit.logic.parser.CliSyntax.PREFIX_PRIORITY;
 import static seedu.taskit.logic.parser.CliSyntax.PREFIX_TAG;
 import static seedu.taskit.logic.parser.CliSyntax.PREFIX_TO;
+import static seedu.taskit.logic.parser.CliSyntax.PREFIX_RECURRING;
 
 import java.util.NoSuchElementException;
 
@@ -27,17 +28,20 @@ public class AddCommandParser {
     public Command parse(String args) {
 
         ArgumentTokenizer argsTokenizer =
-                new ArgumentTokenizer(PREFIX_BY, PREFIX_FROM, PREFIX_TO, PREFIX_PRIORITY, PREFIX_TAG);
+                new ArgumentTokenizer(PREFIX_BY, PREFIX_FROM, PREFIX_TO, PREFIX_PRIORITY, PREFIX_TAG, PREFIX_RECURRING);
         argsTokenizer.tokenize(args);
         String start = null;
         String end = null;
         String priority = null;
+        String recurring = null;
         try {
             start = argsTokenizer.getValue(PREFIX_FROM).get();
             end = argsTokenizer.getValue(PREFIX_TO).get();
+            recurring = argsTokenizer.getValue(PREFIX_RECURRING).get();
         } catch (NoSuchElementException nse) {
             try {
                 end = argsTokenizer.getValue(PREFIX_BY).get();
+                recurring = argsTokenizer.getValue(PREFIX_RECURRING).get();
             } catch (NoSuchElementException nsee1) {}
         }
         try {
@@ -49,7 +53,8 @@ public class AddCommandParser {
                     start,
                     end,
                     priority,
-                    ParserUtil.toSet(argsTokenizer.getAllValues(PREFIX_TAG))
+                    ParserUtil.toSet(argsTokenizer.getAllValues(PREFIX_TAG)),
+                    recurring
             );
         } catch (NoSuchElementException nsee) {
             return new IncorrectCommand(String.format(MESSAGE_INVALID_COMMAND_FORMAT, AddCommand.MESSAGE_USAGE));

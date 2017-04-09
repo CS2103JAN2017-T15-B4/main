@@ -51,6 +51,7 @@ import seedu.taskit.model.task.Priority;
 import seedu.taskit.model.task.ReadOnlyTask;
 import seedu.taskit.model.task.Task;
 import seedu.taskit.model.task.Title;
+import seedu.taskit.model.task.Recurring;
 import seedu.taskit.storage.StorageManager;
 
 
@@ -434,7 +435,7 @@ public class LogicManagerTest {
             Tag tag1 = new Tag("shorter");
             Tag tag2 = new Tag("longer");
             UniqueTagList tags = new UniqueTagList(tag1, tag2);
-            return new Task(title, new Date(), new Date(), new Priority(), tags);
+            return new Task(title, new Date(), new Date(), new Priority(), tags, new Recurring("false"));
         }
 
         /**
@@ -450,7 +451,8 @@ public class LogicManagerTest {
                     new Date("friday at 2pm"),
                     new Date("friday at 3pm"),
                     new Priority(),
-                    new UniqueTagList(new Tag("tag" + Math.abs(seed)), new Tag("tag" + Math.abs(seed + 1)))
+                    new UniqueTagList(new Tag("tag" + Math.abs(seed)), new Tag("tag" + Math.abs(seed + 1))),
+                    new Recurring("false")
             );
         }
 
@@ -546,7 +548,8 @@ public class LogicManagerTest {
                     new Date(),
                     new Date(),
                     new Priority(),
-                    new UniqueTagList(new Tag("tag"))
+                    new UniqueTagList(new Tag("tag")),
+                    new Recurring("false")
             );
         }
     }

@@ -2,6 +2,8 @@ package seedu.taskit.ui;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Region;
@@ -17,6 +19,7 @@ import seedu.taskit.model.task.ReadOnlyTask;
 public class TaskCard extends UiPart<Region> {
 
     private static final String FXML = "TaskListCard.fxml";
+    private static final String RECURRING_TASK_ICON_PATH = "/images/recurring_icon.png";
 
     @FXML
     private Rectangle overdue;
@@ -36,6 +39,10 @@ public class TaskCard extends UiPart<Region> {
     private Label priority;
     @FXML
     private FlowPane tags;
+    @FXML
+    private Label recurringLabel;
+    @FXML
+    private Rectangle recurring_rect;
 
     // @@author A0141011J
     public TaskCard(ReadOnlyTask task, int displayedIndex) {
@@ -80,6 +87,15 @@ public class TaskCard extends UiPart<Region> {
 
         id.setText(displayedIndex + ". ");
         initTags(task);
+        
+        if(task.getRecurring().isRecurring){
+        	//title.setText(task.getTitle().title + "RECURRING");
+//        	Label recurringLabel = new Label("recurring");
+//            String labelColor = TagColor.getColorCode(1);
+//            recurringLabel.setStyle("-fx-background-color: " + labelColor + ";");
+//            tags.getChildren().add(recurringLabel);
+
+        }
     }
 
     private void initTags(ReadOnlyTask task) {
